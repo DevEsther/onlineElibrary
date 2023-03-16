@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://kit.fontawesome.com/5ed731a5e8.js" crossorigin="anonymous"></script>
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0-alpha.6/css/bootstrap.min.css'>
+    <!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
+
+<!-- jQuery library -->
+<script src="https://cdn.jsdelivr.net/npm/jquery@3.6.3/dist/jquery.slim.min.js"></script>
+
+<!-- Popper JS -->
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+
+<!-- Latest compiled JavaScript -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
+</head>
+<body>
+  <header class="position-relative">
+       
+    <nav class="navbar navbar-dark navbar-expand-md justify-content-between align-items-center bg-dark   text-white">
+        <!-- Brand -->
+        <!-- <a class="navbar-brand" href="#">Navbar</a> -->
+        <img class="navbar-brand img-fluid" src="./img/logo.svg" alt="" style="width: 10rem;">
+      
+        <!-- Toggler/collapsibe Button -->
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+      
+        <!-- Navbar links -->
+        <div class="collapse navbar-collapse justify-content-end align-items-center" id="collapsibleNavbar">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link m" href="./congra.html">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link m" href="./contact.html">Contact</a>
+            </li>
+            <li class="nav-item">
+              <!-- <a class="nav-link m" href="#">Pricing</a> -->
+            </li>
+         <span class=" d-flex" id="auth">
+          <li class="nav-item" >
+            <div class="modal fade" id="exampleModalToggle" aria-hidden="true" aria-labelledby="exampleModalToggleLabel" tabindex="-1">
+              <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="exampleModalToggleLabel">Modal 1</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                  </div>
+                  <div class="modal-body">
+                  <div class="login">
+        <form name='form-login'>
+    
+            <h1>REGISTER</h1>
+    
+            <label for="name">Email</label>
+            <input type="email" id="name" placeholder="Username" required>
+    
+            <label for="pw">Password</label>
+            <input type="password"
+                   id= "pw"
+                   placeholder="Password" required>
+    
+            <ul class="helper-text">
+                <li class="length">Must be at least 8 characters long.</li>
+                <li class="lowercase">Must contain a lowercase letter.</li>
+                <li class="uppercase">Must contain an uppercase letter.</li>
+                <li class="special">Must contain a number or special character.</li>
+            </ul>
+            <input id="rgstr_btn" type="submit" value="Register" onclick="store()">
+    
+        </form>
+    </div>
+                    
+                  </div>
+                  <div class="modal-footer">
+                    <button class="btn btn-primary" data-bs-target="#exampleModalToggle2" data-bs-toggle="modal">already have an account</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="modal fade" id="exampleModalToggle2" aria-hidden="true" aria-labelledby="exampleModalToggleLabel2" tabindex="-1">
+              <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="exampleModalToggleLabel2">Modal 2</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close">x</button>
+                  </div>
+                  <div class="modal-body">
+                    <div class="login">
+                      <form name='form-login'>
+                  
+                          <h1>login</h1>
+                  
+                          <label for="userName">Email</label>
+                          <input type="email" id="userName" placeholder="Username" required>
+                  
+                          <label for="userPw">Password</label>
+                          <input type="password" id= "userPw" placeholder="Password" required>
+                  
+                          <div id="remember">
+                              <input type="checkbox" value="lsRememberMe" id="rememberMe"
+                                     style="display: inline-block;">
+                              <label>Remember me</label>
+                          </div>
+                  
+                          <input id= "login_btn" type="submit" value="Login" onclick="check()">
+                  
+                      </form>
+                  </div>
+                  </div>
+                  <div class="modal-footer">
+                    <button class="btn btn-primary" data-bs-target="#exampleModalToggle" data-bs-toggle="modal">Back to first</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <button class="btn btn-primary" data-bs-target="#exampleModalToggle" data-bs-toggle="modal">Register</button>
+</button>  
+  </section>
+</div>
+
+    </header>
+   
+    <section class="about">
+        <h2>About eLibrary</h2>
+        <p>Welcome to eLibrary, your online destination for all things reading and research! Our mission is to provide convenient access to a vast collection of digital books, articles, and research materials to support lifelong learning and discovery.</p>
+        <p>Our digital library is stocked with thousands of books and articles covering a wide range of topics, from science and technology to history and the arts. Whether you're a student, researcher, or just someone who loves to read, we've got something for you.</p>
+        <p>Our team is passionate about promoting literacy and fostering a love of reading, which is why we offer free access to our entire collection. We believe that knowledge should be accessible to everyone, regardless of financial means or location.</p>
+        <p>At eLibrary, we're committed to providing a user-friendly experience for our visitors. Our website is designed with ease of use in mind, and our search functions make it easy to find exactly what you're looking for. Our digital books are compatible with a wide range of devices, so you can read wherever and whenever you want.</p>
+        <p>We're constantly updating and expanding our collection to provide the most comprehensive resource possible. Whether you're looking to expand your horizons, research a topic, or simply curl up with a good book, we hope you'll find everything you need at eLibrary.</p>
+      </section>
+      
+      <button class="btn btn"><a style="color: black; margin-left: 1px;" href="../index.html">Back to home</a></button>
+
+      <style>
+        .about {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.about h2 {
+  font-size: 2rem;
+  text-align: center;
+}
+
+.about p {
+  font-size: 1rem;
+  line-height: 1.5;
+  margin-bottom: 20px;
+}
+
+@media screen and (max-width: 600px) {
+  .about {
+    padding: 10px;
+  }
+
+  .about h2 {
+    font-size: 1.5rem;
+  }
+
+  .about p {
+    font-size: 0.9rem;
+  }
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+    *{
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Poppins',sans-serif;
+      text-decoration: none;
+    }
+    footer{
+      width: 100%;
+      /* position: fixed; */
+      bottom: 0;
+      left: 0;
+      background: #111;
+    }
+    footer .content{
+      max-width: 1350px;
+      margin: auto;
+      padding: 20px;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+    }
+    footer .content p,a{
+      color: #fff;
+    }
+    footer .content .box{
+      width: 33%;
+      transition: all 0.4s ease;
+    }
+    footer .content .topic{
+      font-size: 22px;
+      font-weight: 600;
+      color: #fff;
+      margin-bottom: 16px;
+    
+    }
+    footer .content p{
+      text-align: justify;
+    }
+    footer .content .lower .topic{
+      margin: 24px 0 5px 0;
+    }
+    footer .content .lower i{
+      padding-right: 16px;
+    }
+    footer .content .middle{
+      padding-left: 80px;
+    }
+    footer .content .middle a{
+      line-height: 32px;
+    }
+    footer .content .right input[type="text"]{
+      height: 45px;
+      width: 100%;
+      outline: none;
+      color: #d9d9d9;
+      background: #000;
+      border-radius: 5px;
+      padding-left: 10px;
+      font-size: 17px;
+      border: 2px solid #222222;
+    }
+    footer .content .right input[type="submit"]{
+      height: 42px;
+      width: 100%;
+      font-size: 18px;
+      color: #d9d9d9;
+      background: #eb2f06;
+      outline: none;
+      border-radius: 5px;
+      letter-spacing: 1px;
+      cursor: pointer;
+      margin-top: 12px;
+      border: 2px solid #eb2f06;
+      transition: all 0.3s ease-in-out;
+    }
+    .content .right input[type="submit"]:hover{
+      background: none;
+      color:  #eb2f06;
+    }
+    footer .content .media-icons a{
+      font-size: 16px;
+      height: 45px;
+      width: 45px;
+      display: inline-block;
+      text-align: center;
+      line-height: 43px;
+      border-radius: 5px;
+      border: 2px solid #222222;
+      margin: 30px 5px 0 0;
+      transition: all 0.3s ease;
+    }
+    .content .media-icons a:hover{
+      border-color: #eb2f06;
+    }
+    footer .bottom{
+      width: 100%;
+      text-align: right;
+      color: #d9d9d9;
+      padding: 0 40px 5px 0;
+    }
+    footer .bottom a{
+      color: #eb2f06;
+    }
+    footer a{
+      transition: all 0.3s ease;
+    }
+    footer a:hover{
+      color: #eb2f06;
+    }
+    @media (max-width:1100px) {
+      footer .content .middle{
+        padding-left: 50px;
+      }
+    }
+    @media (max-width:950px){
+      footer .content .box{
+        width: 50%;
+      }
+      .content .right{
+        margin-top: 40px;
+      }
+    }
+    @media (max-width:560px){
+      footer{
+        position: relative;
+      }
+      footer .content .box{
+        width: 100%;
+        margin-top: 30px;
+      }
+      footer .content .middle{
+        padding-left: 0;
+      }
+    }
+    
+
+      </style>
+    
+</body>
+<footer>
+  <div class="content">
+    <div class="left box">
+      <div class="upper">
+        <div class="topic">About us</div>
+        <p>elibrary is a page where u can read novels <br>
+        WE PROVIDE BEST novels</p>
+      </div>
+      <div class="lower">
+        <div class="topic">Contact us</div>
+        <div class="phone">
+          <a href="#"><i class="fas fa-phone-volume"></i>+234 9035537251</a>
+        </div>
+        <div class="email">
+          <a href="#"><i class="fas fa-envelope"></i>estherdy13@gmail.com</a>
+        </div>
+      </div>
+    </div>
+   
+    <div class="right box">
+      <div onclick="subit()" class="topic">Subscribe us</div>
+      <form action="#">
+        <input type="text" placeholder="Enter email address" required>
+        <input onclick="email()" type="submit" name="" id="sub" value="Send">
+        <div class="media-icons">
+          <a href="#"><i class="fab fa-facebook-f"></i></a>
+          <a href="#"><i class="fab fa-instagram"></i></a>
+          <a href="#"><i class="fab fa-twitter"></i></a>
+          <a href="#"><i class="fab fa-youtube"></i></a>
+          <a href="#"><i class="fab fa-linkedin-in"></i></a>
+        </div>
+      </form>
+    </div>
+  </div>
+  <div class="bottom">
+    <p>Copyright © 2023 <a href="#">Elibrary</a> All rights reserved</p>
+  </div>
+</footer>
+<script>
+ function subit(){
+  let email=document.getElementById('email')
+
+  if (email=="") {
+    alert(('pls fill in email'))
+    
+  }
+ }
+ 
+
+</script>
+</html>

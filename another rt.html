@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="img-container">
+        <img src="./img/istockphoto-1312155376-612x612.jpg" alt="your image">
+        <div class="img-text">
+          <h1>Your text here</h1>
+          <p>More text here</p>
+        </div>
+      </div>
+      
+<style>
+.img-container {
+  position: relative;
+  width: 100%;
+}
+
+.img-container img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.img-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: white;
+}
+
+.img-text h1 {
+  font-size: 3em;
+  margin: 0;
+}
+
+.img-text p {
+  font-size: 1.5em;
+  margin: 0;
+}
+
+@media (max-width: 767px) { /* For screens smaller than 768px */
+  .img-text h1 {
+    font-size: 2em;
+  }
+
+  .img-text p {
+    font-size: 1em;
+  }
+}
+
+
+</style>
+
+
+
+  
+      
+
+       
+</body>
+
+</html>
